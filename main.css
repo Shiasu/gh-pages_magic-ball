@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+    background: radial-gradient(340px 300px, #d4d4d4, black) no-repeat;
+}
+
+section {
+	text-align: center;
+	transform: translate(-50%, -50%);
+	position: absolute; 
+	top: 50%; 
+	left: 50%;
+}
+
+#prediction-ball {
+	cursor: pointer;
+}
+
+.dragClass {
+	animation: drag 0.5s ease;
+
+}
+
+@keyframes drag {
+	0% {
+		transform: translateX(5px);
+	}
+	10% {
+		transform: translateX(15px);
+	}
+	20% {s
+		transform: translateX(5px);
+	}
+	25% {
+		transform: translateX(0px);
+	}
+	35% {
+		transform: translateX(-5px);
+	}
+	45% {
+		transform: translateX(-15px);
+	}
+	50% {
+		transform: translateX(-20px);
+	}
+	60% {
+		transform: translateX(-15px);
+	}
+	70% {
+		transform: translateX(-5px);
+	}
+	75% {
+		transform: translateX(0px);
+	}
+	85% {
+		transform: translateX(5px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
